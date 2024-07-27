@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.15.5
+FROM tensorflow/tensorflow:1.15.5-gpu
 
 # Set the working directory in the container to 'tft'
 WORKDIR /tft
