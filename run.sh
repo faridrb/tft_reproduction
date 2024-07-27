@@ -19,9 +19,9 @@
 
 # Modifiable experiment options.
 # Expt options include {volatility, electricity, traffic, favorita}
-EXPT=traffic
+EXPT=electricity
 OUTPUT_FOLDER=~/tft_outputs  # Path to store data & experiment outputs
-USE_GPU=no
+USE_GPU=yes
 TESTING_MODE=yes  # If yes, trains a small model with little data to test script
 
 # Step 1: Setup environment.

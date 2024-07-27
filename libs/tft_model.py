@@ -447,7 +447,7 @@ class TemporalFusionTransformer(object):
 
     # Network params
     self.quantiles = [0.1, 0.5, 0.9]
-    self.use_cudnn = use_cudnn  # Whether to use GPU optimised LSTM
+    self.use_cudnn = False #use_cudnn  # Whether to use GPU optimised LSTM
     self.hidden_layer_size = int(params['hidden_layer_size'])
     self.dropout_rate = float(params['dropout_rate'])
     self.max_gradient_norm = float(params['max_gradient_norm'])
