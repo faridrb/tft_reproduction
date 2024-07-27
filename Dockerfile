@@ -5,7 +5,7 @@ FROM tensorflow/tensorflow:1.15.5
 WORKDIR /tft
 
 # Install git
-RUN apt-get update && apt-get install -y git cmake
+RUN apt-get update && apt-get install -y git
 
 # Copy the contents of your local project directory to the Docker container
 COPY . /tft
