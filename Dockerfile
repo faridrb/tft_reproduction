@@ -5,7 +5,7 @@ FROM tensorflow/tensorflow:1.15.5
 WORKDIR /tft
 
 # Install git
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git cmake
 
 # Copy the contents of your local project directory to the Docker container
 COPY . /tft
@@ -14,4 +14,4 @@ COPY . /tft
 RUN chmod +x run.sh
 
 # Command to run when the container starts
-CMD ./run.sh && /bin/bash
+CMD bash -c "./run.sh && /bin/bash"
